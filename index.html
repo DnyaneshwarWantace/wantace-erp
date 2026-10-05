@@ -1,0 +1,845 @@
+<!doctype html><html lang="en"><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover">
+
+<!-- ===== PRIMARY META TAGS ===== -->
+<title>Custom ERP for Manufacturers | Wantace</title>
+<meta name="title" content="Custom ERP for Manufacturers | Wantace">
+<meta name="description" content="Wantace builds custom ERP software for factories — replace WhatsApp groups, Excel sheets and old software with one system built exactly for your process. Pay only after you see it working.">
+
+<!-- ===== OPEN GRAPH / FACEBOOK / WHATSAPP / TELEGRAM ===== -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://wantace.com/">
+<meta property="og:site_name" content="Wantace">
+<meta property="og:title" content="Custom ERP for Manufacturers | Wantace">
+<meta property="og:description" content="Poori factory, ek screen pe. Replace WhatsApp groups & Excel with one ERP built for your factory. Your process, your language. Pay after you see it work.">
+<meta property="og:image" content="https://wantace.com/img/hero_ba.jpg">
+<meta property="og:image:width" content="1520">
+<meta property="og:image:height" content="2000">
+<meta property="og:image:alt" content="Wantace Custom ERP — before and after: from scattered spreadsheets to one factory dashboard">
+<meta property="og:locale" content="en_IN">
+
+<!-- ===== TWITTER / X CARD ===== -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@wantace">
+<meta name="twitter:title" content="Custom ERP for Manufacturers | Wantace">
+<meta name="twitter:description" content="Replace WhatsApp groups & Excel with one ERP built for your factory. Your process, your language. Pay after you see it work.">
+<meta name="twitter:image" content="https://wantace.com/img/hero_ba.jpg">
+
+<!-- ===== WHATSAPP SPECIFIC ===== -->
+<meta property="og:image:type" content="image/jpeg">
+
+<style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap">
+<style>
+/* Layout: single phone-width reading column on white; photo-led cards; long detail tucked into tap-to-open panels; WhatsApp CTA repeated + docked */
+:root{
+  color-scheme:light;
+  --bg:#ffffff; --soft:#f4f7fd; --ink:#0b1730; --text:#3a465e; --muted:#6a7792; --line:#e1e8f5;
+  --brand:#2468ff; --brand-ink:#1a4fd4; --navy:#00184d; --wash:#ecf2ff;
+  --ok:#0e9468; --ok-w:#e6f7f0; --bad:#cc3d3d; --bad-w:#fdeeee; --amber:#b86e00; --amber-w:#fff4e3;
+  --wa:#1fa855; --wa-dark:#178a45;
+  --display:'Space Grotesk','Inter',system-ui,sans-serif;
+  --body:'Inter',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
+  --mono:ui-monospace,'SFMono-Regular',Menlo,Consolas,monospace;
+}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--text);font-family:var(--body);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased;padding-bottom:86px}
+h1,h2,h3,h4{font-family:var(--display);color:var(--ink);margin:0;letter-spacing:-.018em;text-wrap:balance;line-height:1.14}
+p{margin:0}
+strong,b{color:var(--ink);font-weight:600}
+img{display:block;max-width:100%;height:auto}
+a{color:var(--brand-ink)}
+.wrap{max-width:620px;margin:0 auto;padding-inline:18px}
+section{padding-block:48px}
+section.soft{background:var(--soft);border-block:1px solid var(--line)}
+.eyebrow{display:block;font-family:var(--display);font-size:12.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--brand-ink);margin-bottom:10px}
+.h2{font-size:clamp(25px,6.6vw,32px);font-weight:700}
+.lede{font-size:16.5px;margin-top:12px}
+.hi{color:var(--brand-ink)}
+:focus-visible{outline:2px solid var(--brand);outline-offset:3px;border-radius:6px}
+
+/* ---------- WhatsApp CTA ---------- */
+.wa{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;background:var(--wa);color:#fff;text-decoration:none;font-family:var(--display);font-weight:600;font-size:17px;padding:15px 18px;border-radius:14px;box-shadow:0 6px 18px -8px rgba(31,168,85,.55)}
+.wa:hover{background:var(--wa-dark)}
+.wa svg{flex:none}
+.wa-note{text-align:center;font-size:13.5px;color:var(--muted);margin-top:9px}
+.cta-block{margin-top:24px}
+
+/* ---------- top bar ---------- */
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:rgba(255,255,255,.94);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-block:11px}
+.logo{height:24px;width:auto;color:var(--navy)}
+.top .chip{display:inline-flex;align-items:center;gap:7px;font-family:var(--display);font-weight:600;font-size:14px;color:var(--wa-dark);text-decoration:none;border:1.5px solid var(--wa);border-radius:999px;padding:6px 13px;white-space:nowrap}
+
+/* ---------- hero ---------- */
+.hero{padding-block:22px 40px}
+.hero-img{border-radius:18px;overflow:hidden;position:relative;background:linear-gradient(160deg,#eef3ff,#f7f9fd)}
+.hero-img img{width:100%;height:auto}
+.hero-img .float{position:absolute;left:12px;right:12px;bottom:12px;background:rgba(255,255,255,.96);border-radius:12px;padding:10px 12px;box-shadow:0 8px 24px -10px rgba(0,24,77,.35)}
+.float-top{display:flex;justify-content:space-between;gap:8px;font-size:12.5px;color:var(--muted);margin-bottom:8px}
+.float-top b{font-family:var(--mono);font-weight:600;font-size:12px;color:var(--ink)}
+.stages{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:5px}
+.st{display:flex;flex-direction:column;gap:5px;min-width:0}
+.st i{height:5px;border-radius:3px;background:var(--line);display:block}
+.st.done i{background:var(--ok)}
+.st.live i{background:linear-gradient(90deg,var(--ok) 0 55%,var(--line) 55%)}
+.st span{font-size:10.5px;line-height:1.2;color:var(--muted)}
+.st.live span{color:var(--ink);font-weight:600}
+.hero .kicker{display:inline-flex;align-items:center;gap:8px;margin-top:22px;font-size:13px;font-weight:600;color:var(--brand-ink);background:var(--wash);border-radius:999px;padding:5px 12px}
+.hero h1{font-size:clamp(31px,8.4vw,44px);font-weight:700;margin-top:12px;letter-spacing:-.028em;line-height:1.06}
+.hero .sub{font-size:17px;margin-top:14px}
+.trust{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:18px}
+.trust div{display:flex;gap:8px;align-items:flex-start;font-size:14px;line-height:1.35;color:var(--ink);font-weight:500}
+.trust svg{flex:none;margin-top:1px;color:var(--ok)}
+
+/* ---------- pain mirror ---------- */
+.pains-grid{display:grid;gap:10px;margin-top:20px}
+.pain{display:flex;gap:12px;align-items:flex-start;background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:12px 14px}
+.pain .x{flex:none;width:24px;height:24px;border-radius:7px;background:var(--bad-w);color:var(--bad);display:grid;place-items:center;font-weight:700;font-size:13px}
+.pain p{font-size:15.5px;line-height:1.45;color:var(--ink)}
+.pain p small{display:block;font-size:13.5px;color:var(--muted);margin-top:2px}
+.verdict{margin-top:16px;background:var(--navy);color:#dbe5ff;border-radius:14px;padding:16px;font-size:15.5px}
+.verdict b{color:#fff}
+
+/* ---------- hub diagram ---------- */
+.hub{margin-top:22px;border:1px solid var(--line);border-radius:18px;padding:16px;background:var(--bg)}
+.hub-row{display:flex;flex-wrap:wrap;gap:6px;justify-content:center}
+.hub-row span{font-size:13px;font-weight:500;padding:6px 10px;border-radius:8px;white-space:nowrap}
+.hub-row.in span{background:var(--bad-w);color:var(--bad)}
+.hub-row.out span{background:var(--ok-w);color:var(--ok)}
+.hub-lbl{text-align:center;font-family:var(--display);font-size:11.5px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:8px}
+.hub-arrow{display:flex;justify-content:center;padding-block:8px;color:var(--muted)}
+.hub-core{background:var(--brand);color:#fff;border-radius:14px;padding:14px;text-align:center}
+.hub-core b{display:block;color:#fff;font-family:var(--display);font-size:19px}
+.hub-core small{display:block;font-size:13px;color:#dbe6ff;margin-top:2px}
+.hub-mods{display:flex;flex-wrap:wrap;gap:5px;justify-content:center;margin-top:10px}
+.hub-mods span{font-size:12px;background:rgba(255,255,255,.16);border-radius:6px;padding:3px 8px}
+
+/* ---------- details / accordions ---------- */
+details.more{border-top:1px solid var(--line);margin-top:16px}
+details.more>summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:10px;padding-block:13px 4px;font-family:var(--display);font-weight:600;font-size:15.5px;color:var(--brand-ink)}
+details.more>summary::-webkit-details-marker{display:none}
+details.more>summary::after{content:"+";font-size:22px;line-height:1;font-weight:500}
+details.more[open]>summary::after{content:"–"}
+.more-body{padding-top:10px;display:flex;flex-direction:column;gap:14px;font-size:15.5px}
+
+/* ---------- case ---------- */
+.cases{display:flex;flex-direction:column;gap:22px;margin-top:24px}
+.case{background:var(--bg);border:1px solid var(--line);border-radius:20px;overflow:hidden;box-shadow:0 10px 30px -22px rgba(0,24,77,.35)}
+.case-img{position:relative;aspect-ratio:16/10;background:var(--soft)}
+.case-img img{width:100%;height:100%;object-fit:cover}
+.case-tag{position:absolute;top:12px;left:12px;background:rgba(255,255,255,.95);color:var(--ink);font-family:var(--mono);font-size:11.5px;font-weight:600;letter-spacing:.04em;border-radius:7px;padding:4px 9px}
+.case-body{padding:18px 16px 18px}
+.case h3{font-size:23px;font-weight:700}
+.case .ind{font-size:14px;color:var(--muted);margin-top:3px}
+.shift{display:grid;grid-template-columns:minmax(0,1fr) 24px minmax(0,1fr);align-items:stretch;gap:6px;margin-top:14px}
+.shift>div{border-radius:12px;padding:10px 11px;font-size:14px;line-height:1.3;font-weight:600}
+.shift small{display:block;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;font-weight:700;margin-bottom:3px;opacity:.85}
+.shift .from{background:var(--bad-w);color:var(--bad)}
+.shift .to{background:var(--ok-w);color:var(--ok)}
+.shift .arr{display:grid;place-items:center;color:var(--muted)}
+.lbl{font-family:var(--display);font-size:12px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin:18px 0 8px}
+.list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px}
+.list li{display:flex;gap:10px;font-size:15px;line-height:1.48}
+.list li::before{flex:none;width:18px;height:18px;margin-top:2px;border-radius:50%;display:grid;place-items:center;font-size:10.5px;font-weight:700}
+.list.bad li::before{content:"✕";background:var(--bad-w);color:var(--bad)}
+.list.good li::before{content:"✓";background:var(--ok-w);color:var(--ok)}
+
+
+
+
+/* single before/after image */
+.case-ba{margin:0;position:relative;background:var(--bg);padding:10px 10px 0}
+.case-ba img{width:100%;height:auto;border-radius:14px}
+.case-ba .case-tag{position:static;display:inline-block;margin:2px 0 8px 4px;background:transparent;padding:0;color:var(--muted)}
+html.pdf .case-ba{break-inside:avoid}
+/* before/after swipe */
+.ba{position:relative;background:var(--soft);border-bottom:1px solid var(--line)}
+.ba-tabs{display:flex;align-items:center;gap:6px;padding:10px 12px 0}
+.ba-tabs button{font:600 13.5px var(--display);border:1px solid var(--line);background:var(--bg);color:var(--muted);border-radius:999px;padding:6px 12px;cursor:pointer}
+.ba-tabs button.on[data-go="0"]{background:var(--bad);border-color:var(--bad);color:#fff}
+.ba-tabs button.on[data-go="1"]{background:var(--ok);border-color:var(--ok);color:#fff}
+.ba-tabs .case-tag{position:static;margin-left:auto;background:transparent;padding:0;color:var(--muted);font-size:10.5px}
+.ba-track{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.ba-track::-webkit-scrollbar{display:none}
+.ba-slide{flex:0 0 100%;scroll-snap-align:start;margin:0;padding:8px 6px 0;position:relative}
+.ba-slide img{width:100%;height:auto}
+.ba-slide figcaption{display:none}
+.ba-hint{text-align:center;font-size:12.5px;color:var(--muted);padding:2px 0 10px}
+.zoom{margin:0;border:1px solid var(--line);border-radius:14px;background:var(--soft);padding:10px;display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.zoom img{border-radius:10px;box-shadow:0 8px 20px -12px rgba(0,24,77,.4);background:#fff;width:100%;height:auto}
+.zoom.wide,.zoom.tall{grid-template-columns:1fr}
+.zoom.tall img{max-width:320px;margin:0 auto}
+.zoom figcaption{grid-column:1/-1;font-size:13px;color:var(--muted);line-height:1.4}
+html.pdf .ba-tabs,html.pdf .ba-hint{display:none}
+html.pdf .ba-track{flex-direction:column;overflow:visible;gap:6px;padding-bottom:8px}
+html.pdf .ba-slide figcaption{display:block;position:absolute;top:12px;left:12px;font:700 11px var(--display);letter-spacing:.12em;text-transform:uppercase;color:#fff;padding:3px 9px;border-radius:6px}
+html.pdf .ba-slide.b figcaption{background:var(--bad)}
+html.pdf .ba-slide.a figcaption{background:var(--ok)}
+html.pdf .ba-slide,html.pdf .zoom{break-inside:avoid}
+/* two-column before/after flow */
+.flow{margin-top:16px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:8px}
+.fcol{border-radius:14px;padding:10px 8px 12px;display:flex;flex-direction:column;align-items:stretch;gap:3px;text-align:center}
+.fcol.b{background:var(--bad-w)}
+.fcol.a{background:var(--ok-w)}
+.fh{font-family:var(--display);font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;margin-bottom:5px}
+.fcol.b .fh{color:var(--bad)}
+.fcol.a .fh{color:var(--ok)}
+.fcol .n{background:var(--bg);border-radius:8px;padding:6px 6px;font-size:12.5px;line-height:1.25;font-weight:500;color:var(--ink)}
+.fcol.b .n.end{background:var(--bad);color:#fff;font-weight:600}
+.fcol.a .n.end{background:var(--ok);color:#fff;font-weight:600}
+.fcol i{font-style:normal;font-size:12px;line-height:1;color:var(--muted)}
+.vflow{display:flex;flex-direction:column;align-items:stretch;gap:3px;text-align:center;background:var(--soft);border-radius:14px;padding:12px}
+.vflow .vn{background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:8px 10px;font-weight:600;color:var(--ink);font-size:14px}
+.vflow .vn small{display:block;font-weight:400;color:var(--muted);font-size:12.5px;margin-top:1px}
+.vflow .vn.loop{border:1.5px dashed var(--brand);background:var(--wash)}
+.vflow .vn.end{background:var(--ok);color:#fff;border-color:transparent}
+.vflow i{font-style:normal;color:var(--muted);font-size:13px;line-height:1}
+.quote{margin-top:16px;border-left:3px solid var(--brand);padding:2px 0 2px 12px;font-family:var(--display);font-size:17.5px;font-weight:500;color:var(--ink);line-height:1.38}
+.quote small{display:block;font-family:var(--body);font-size:13px;font-weight:400;color:var(--muted);margin-top:4px}
+.testi{margin-top:16px;background:var(--wash);border-radius:14px;padding:14px 14px 14px 16px}
+.testi p{font-family:var(--display);font-size:16.5px;font-weight:500;color:var(--ink);line-height:1.4}
+.testi p::before{content:"“"}
+.testi p::after{content:"”"}
+.testi small{display:block;margin-top:8px;font-size:13.5px;color:var(--muted)}
+.testi small b{color:var(--ink)}
+
+/* excel / old software visual (inside details) */
+.vis{border:1px solid var(--line);border-radius:10px;overflow-x:auto;background:var(--bg)}
+.xl{font-family:var(--mono);font-size:11.5px;min-width:420px;padding:8px}
+.xl table{border-collapse:collapse;width:100%}
+.xl td{border:1px solid var(--line);padding:4px 6px;white-space:nowrap;color:var(--text)}
+.xl tr:first-child td{background:var(--wash);color:var(--ink);font-weight:600}
+.xl td.q{color:var(--bad);font-weight:600}
+.xl .tabs{display:flex;gap:2px;margin-top:4px}
+.xl .tabs span{font-size:10.5px;padding:3px 8px;border:1px solid var(--line);border-top:0;color:var(--muted)}
+.xl .tabs span:first-child{color:var(--ok);font-weight:600}
+.chat{display:flex;flex-direction:column;gap:6px;padding:10px}
+.grp{display:flex;align-items:center;gap:10px;border:1px solid var(--line);border-radius:10px;padding:7px 10px;min-width:0}
+.grp .av{flex:none;width:28px;height:28px;border-radius:50%;background:var(--ok-w);color:var(--ok);display:grid;place-items:center;font-family:var(--display);font-weight:700;font-size:11px}
+.grp div{min-width:0;flex:1}
+.grp b{display:block;font-size:13px}
+.grp em{display:block;font-style:normal;font-size:12.5px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.grp .dot{flex:none;width:9px;height:9px;border-radius:50%;background:var(--ok)}
+
+/* ---------- process ---------- */
+.track{margin-top:22px;display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:4px;position:relative}
+.track::before{content:"";position:absolute;left:8%;right:8%;top:15px;height:2px;background:var(--line)}
+.tk{position:relative;display:flex;flex-direction:column;align-items:center;gap:6px;text-align:center;min-width:0}
+.tk i{width:32px;height:32px;border-radius:50%;background:var(--bg);border:2px solid var(--brand);display:grid;place-items:center;font-style:normal;font-family:var(--display);font-weight:700;font-size:14px;color:var(--brand-ink)}
+.tk.free i{background:var(--brand);color:#fff}
+.tk span{font-size:11px;line-height:1.2;color:var(--ink);font-weight:500}
+.tk em{font-style:normal;font-size:10px;color:var(--muted)}
+.steps{list-style:none;margin:22px 0 0;padding:0;display:flex;flex-direction:column;gap:10px}
+.step{border:1px solid var(--line);border-radius:14px;background:var(--bg);padding:14px}
+.step-h{display:flex;align-items:center;gap:12px}
+.step-h .n{flex:none;width:30px;height:30px;border-radius:9px;background:var(--wash);color:var(--brand-ink);display:grid;place-items:center;font-family:var(--display);font-weight:700}
+.step.first .step-h .n{background:var(--brand);color:#fff}
+.step-h h3{font-size:17px;font-weight:600}
+.step-h .when{margin-left:auto;flex:none;font-size:12px;font-weight:600;color:var(--brand-ink);background:var(--wash);border-radius:6px;padding:2px 7px}
+.step p{font-size:15px;margin-top:8px}
+.step ul{margin:8px 0 0;padding-left:18px;font-size:14.5px}
+.photo{border-radius:16px;overflow:hidden;aspect-ratio:3/2;margin-top:14px;position:relative;background:var(--soft)}
+.photo img{width:100%;height:100%;object-fit:cover}
+.photo figcaption{position:absolute;left:10px;bottom:10px;right:10px;background:rgba(255,255,255,.95);border-radius:9px;padding:7px 10px;font-size:13px;color:var(--ink);font-weight:500}
+
+/* ---------- payment ---------- */
+.pay{margin-top:20px;background:var(--bg);border:1px solid var(--line);border-radius:18px;padding:18px 16px}
+.paybar{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:5px;margin-bottom:6px}
+.paybar i{height:10px;border-radius:5px;background:var(--brand);display:block}
+.paybar i:last-child{background:repeating-linear-gradient(135deg,var(--ok) 0 6px,var(--ok-w) 6px 10px)}
+.paylbl{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:5px;margin-bottom:16px}
+.paylbl span{font-size:11px;color:var(--muted);text-align:center;line-height:1.25}
+.ms{display:flex;flex-direction:column;gap:12px}
+.ms-row{display:grid;grid-template-columns:auto minmax(0,1fr);gap:12px}
+.ms-row .k{font-family:var(--mono);font-size:12px;font-weight:600;color:var(--brand-ink);background:var(--wash);border-radius:6px;padding:3px 7px;height:max-content;margin-top:2px}
+.ms-row.last .k{color:var(--ok);background:var(--ok-w)}
+.ms-row b{display:block;font-size:15.5px}
+.ms-row span{display:block;font-size:14.5px}
+.own{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:14px}
+.own div{border-radius:12px;background:var(--wash);padding:12px}
+.own b{display:block;font-family:var(--display);font-size:15.5px}
+.own small{display:block;font-size:13px;color:var(--text);line-height:1.4;margin-top:2px}
+
+/* ---------- FAQ ---------- */
+.faq{margin-top:20px;display:flex;flex-direction:column;gap:8px}
+.faq details{background:var(--bg);border:1px solid var(--line);border-radius:14px}
+.faq summary{list-style:none;cursor:pointer;padding:14px 44px 14px 14px;font-family:var(--display);font-weight:600;font-size:16px;color:var(--ink);position:relative;line-height:1.35}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"";position:absolute;right:17px;top:50%;width:8px;height:8px;border-right:2px solid var(--muted);border-bottom:2px solid var(--muted);transform:translateY(-70%) rotate(45deg)}
+.faq details[open] summary::after{transform:translateY(-30%) rotate(-135deg)}
+.faq .ans{padding:0 14px 16px;font-size:15px;display:flex;flex-direction:column;gap:8px}
+
+/* ---------- fit ---------- */
+.fit{display:grid;gap:12px;margin-top:20px}
+.fit-box{border-radius:16px;padding:16px}
+.fit-box.yes{background:var(--ok-w)}
+.fit-box.no{background:var(--soft);border:1px solid var(--line)}
+.fit-box h3{font-size:17px;margin-bottom:10px}
+.fit-box.yes h3{color:var(--ok)}
+.fit-box.no h3{color:var(--muted)}
+.fit-box .list li{font-size:14.5px}
+.list.no li::before{content:"–";background:var(--line);color:var(--muted)}
+
+/* ---------- final ---------- */
+.final{background:var(--navy);border-radius:22px;padding:24px 18px;color:#c9d6f5}
+.final h2{color:#fff;font-size:clamp(25px,6.8vw,32px)}
+.final p{margin-top:10px;font-size:15.5px}
+.final ol{margin:14px 0 0;padding-left:20px;font-size:15px;display:flex;flex-direction:column;gap:5px}
+.final ol b{color:#fff}
+.final .wa{margin-top:20px}
+.final .wa-note{color:#a9b9df}
+.num-line{margin-top:14px;text-align:center;font-size:14px;color:#a9b9df}
+.num-line span{color:#fff;font-weight:600;user-select:all}
+
+footer{padding-block:30px 20px;font-size:13px;color:var(--muted)}
+footer .logo{height:18px;margin-bottom:10px}
+
+.dock{position:fixed;left:0;right:0;bottom:0;z-index:30;background:rgba(255,255,255,.97);border-top:1px solid var(--line);padding:10px 14px calc(10px + env(safe-area-inset-bottom,0px))}
+.dock .in{max-width:620px;margin:0 auto;display:flex;align-items:center;gap:10px}
+.dock p{flex:1;min-width:0;font-size:12.5px;line-height:1.3;color:var(--muted)}
+.dock p b{display:block;font-family:var(--display);font-size:14.5px}
+.dock .wa{width:auto;flex:none;font-size:15px;padding:12px 15px;box-shadow:none}
+
+.pdf-only{display:none}
+
+@media (max-width:370px){
+  .trust,.own{grid-template-columns:1fr}
+  .tk span{font-size:10px}
+}
+@media (prefers-reduced-motion:no-preference){
+  .st.live i{animation:pulse 2.4s ease-in-out infinite}
+  @keyframes pulse{50%{opacity:.55}}
+}
+
+/* ---------- PDF mode ---------- */
+@page{size:150mm 266mm;margin:9mm 0 10mm}
+html.pdf body{padding-bottom:0;font-size:15px}
+html.pdf .dock,html.pdf .top{display:none}
+html.pdf .pdf-only{display:block}
+html.pdf section{padding-block:26px}
+html.pdf .wrap{padding-inline:22px}
+html.pdf details>summary::after{display:none}
+html.pdf details.more>summary{padding-top:12px;color:var(--ink)}
+html.pdf .case,html.pdf .step,html.pdf .faq details,html.pdf .pay,html.pdf .fit-box,html.pdf .final,html.pdf .hub,html.pdf .pain,html.pdf .photo,html.pdf .flow,html.pdf .ms-row,html.pdf .verdict,html.pdf .own,html.pdf .testi{break-inside:avoid}
+html.pdf .case-img,html.pdf .case-body>div:first-child,html.pdf .shift{break-inside:avoid}
+html.pdf .case{break-inside:auto;box-shadow:none}
+html.pdf .case-head{break-inside:auto}
+html.pdf .brk{break-before:page}
+html.pdf .wa{box-shadow:none}
+html.pdf .pdfbar{display:flex}
+html.pdf .pdf-hide{display:none}
+html.pdf .hero{padding-block:14px 10px}
+html.pdf .hero-img{max-width:58%;margin:0 auto}
+html.pdf .hero h1{font-size:34px}
+html.pdf .pain{padding:9px 12px}
+html.pdf .pains-grid{gap:7px}
+html.pdf .case-ba img{max-width:68%;margin:0 auto;display:block}
+html.pdf .h2,html.pdf h1{break-inside:avoid}
+
+html.pdf .eyebrow,html.pdf .h2,html.pdf .lbl,html.pdf .more>summary{break-after:avoid}
+html.pdf .final{margin-top:0}
+.pdfbar{display:none;align-items:center;justify-content:space-between;padding:4px 22px 14px;border-bottom:1px solid var(--line)}
+.pdfbar a{font-family:var(--display);font-weight:600;font-size:13px;color:var(--wa-dark);text-decoration:none}
+</style>
+
+<header class="top">
+  <div class="wrap">
+    <svg class="logo" viewBox="0 0 973 215" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Wantace">
+<path d="M319.062 166L301.746 48.3211H319.902L334.024 153.728H336.713L354.87 48.3211H386.643L404.799 153.728H407.489L421.442 48.3211H439.598L422.283 166H390.509L372.017 59.0804H369.327L351.003 166H319.062ZM475.727 168.354C469.787 168.354 464.463 167.345 459.756 165.328C455.161 163.31 451.463 160.34 448.661 156.418C445.971 152.495 444.626 147.732 444.626 142.128C444.626 136.412 445.971 131.705 448.661 128.007C451.463 124.196 455.217 121.338 459.924 119.433C464.743 117.528 470.179 116.575 476.231 116.575H501.448V111.195C501.448 106.376 499.991 102.509 497.077 99.5955C494.163 96.6816 489.68 95.2246 483.628 95.2246C477.688 95.2246 473.149 96.6255 470.011 99.4274C466.873 102.229 464.799 105.872 463.791 110.355L447.652 105.143C448.997 100.66 451.126 96.6255 454.04 93.0391C457.066 89.3406 461.045 86.3706 465.976 84.1291C470.908 81.8876 476.848 80.7669 483.796 80.7669C494.555 80.7669 503.017 83.5127 509.181 89.0044C515.345 94.4961 518.427 102.285 518.427 112.372V146.499C518.427 149.861 519.996 151.542 523.135 151.542H530.195V166H517.251C513.328 166 510.134 164.991 507.668 162.974C505.203 160.957 503.97 158.211 503.97 154.736V154.232H501.448C500.551 155.913 499.207 157.875 497.413 160.116C495.62 162.358 492.986 164.319 489.512 166C486.038 167.569 481.443 168.354 475.727 168.354ZM478.248 154.064C485.197 154.064 490.801 152.103 495.06 148.18C499.319 144.145 501.448 138.654 501.448 131.705V130.024H477.24C472.645 130.024 468.946 131.033 466.144 133.05C463.342 134.955 461.942 137.813 461.942 141.624C461.942 145.434 463.399 148.46 466.312 150.702C469.226 152.943 473.205 154.064 478.248 154.064ZM540.307 166V83.1205H557.286V95.5608H559.976C561.545 92.1985 564.347 89.0604 568.382 86.1465C572.417 83.2325 578.413 81.7756 586.37 81.7756C592.646 81.7756 598.194 83.1765 603.013 85.9784C607.944 88.7803 611.811 92.7589 614.613 97.9144C617.415 102.958 618.816 109.066 618.816 116.239V166H601.5V117.584C601.5 110.411 599.707 105.143 596.12 101.781C592.534 98.3066 587.603 96.5695 581.326 96.5695C574.154 96.5695 568.382 98.9231 564.011 103.63C559.752 108.337 557.623 115.174 557.623 124.14V166H540.307ZM665.814 166C660.77 166 656.736 164.487 653.709 161.461C650.796 158.435 649.339 154.4 649.339 149.357V97.7463H626.475V83.1205H649.339V55.7181H666.654V83.1205H691.367V97.7463H666.654V146.331C666.654 149.693 668.223 151.374 671.361 151.374H688.677V166H665.814ZM730.542 168.354C724.602 168.354 719.279 167.345 714.571 165.328C709.976 163.31 706.278 160.34 703.476 156.418C700.786 152.495 699.441 147.732 699.441 142.128C699.441 136.412 700.786 131.705 703.476 128.007C706.278 124.196 710.032 121.338 714.74 119.433C719.559 117.528 724.994 116.575 731.047 116.575H756.263V111.195C756.263 106.376 754.806 102.509 751.893 99.5955C748.979 96.6816 744.496 95.2246 738.443 95.2246C732.504 95.2246 727.964 96.6255 724.826 99.4274C721.688 102.229 719.615 105.872 718.606 110.355L702.467 105.143C703.812 100.66 705.942 96.6255 708.856 93.0391C711.882 89.3406 715.86 86.3706 720.792 84.1291C725.723 81.8876 731.663 80.7669 738.612 80.7669C749.371 80.7669 757.832 83.5127 763.997 89.0044C770.161 94.4961 773.243 102.285 773.243 112.372V146.499C773.243 149.861 774.812 151.542 777.95 151.542H785.011V166H772.066C768.143 166 764.949 164.991 762.484 162.974C760.018 160.957 758.785 158.211 758.785 154.736V154.232H756.263C755.367 155.913 754.022 157.875 752.229 160.116C750.436 162.358 747.802 164.319 744.327 166C740.853 167.569 736.258 168.354 730.542 168.354ZM733.064 154.064C740.013 154.064 745.616 152.103 749.875 148.18C754.134 144.145 756.263 138.654 756.263 131.705V130.024H732.055C727.46 130.024 723.762 131.033 720.96 133.05C718.158 134.955 716.757 137.813 716.757 141.624C716.757 145.434 718.214 148.46 721.128 150.702C724.042 152.943 728.021 154.064 733.064 154.064ZM831.65 168.354C823.693 168.354 816.464 166.672 809.964 163.31C803.575 159.948 798.476 155.073 794.665 148.684C790.967 142.296 789.118 134.619 789.118 125.653V123.467C789.118 114.501 790.967 106.88 794.665 100.604C798.476 94.2159 803.575 89.3406 809.964 85.9784C816.464 82.5041 823.693 80.7669 831.65 80.7669C839.607 80.7669 846.388 82.2239 851.992 85.1378C857.596 88.0518 862.079 91.9184 865.441 96.7376C868.915 101.557 871.157 106.88 872.165 112.708L855.354 116.239C854.794 112.54 853.617 109.178 851.824 106.152C850.03 103.126 847.509 100.716 844.259 98.9231C841.008 97.1299 836.918 96.2333 831.986 96.2333C827.167 96.2333 822.796 97.354 818.874 99.5955C815.063 101.725 812.037 104.863 809.796 109.01C807.554 113.045 806.433 117.976 806.433 123.804V125.317C806.433 131.145 807.554 136.132 809.796 140.279C812.037 144.426 815.063 147.564 818.874 149.693C822.796 151.823 827.167 152.887 831.986 152.887C839.271 152.887 844.819 151.038 848.63 147.339C852.44 143.529 854.85 138.71 855.858 132.882L872.67 136.748C871.325 142.464 868.915 147.732 865.441 152.551C862.079 157.37 857.596 161.237 851.992 164.151C846.388 166.953 839.607 168.354 831.65 168.354ZM923.91 168.354C915.504 168.354 908.163 166.616 901.887 163.142C895.611 159.556 890.68 154.568 887.093 148.18C883.619 141.68 881.882 134.171 881.882 125.653V123.636C881.882 115.006 883.619 107.497 887.093 101.109C890.568 94.6082 895.387 89.6208 901.551 86.1465C907.827 82.5601 915.056 80.7669 923.237 80.7669C931.195 80.7669 938.143 82.5601 944.083 86.1465C950.135 89.6208 954.843 94.4961 958.205 100.772C961.567 107.048 963.248 114.389 963.248 122.795V129.351H899.534C899.758 136.636 902.167 142.464 906.762 146.835C911.47 151.094 917.297 153.223 924.246 153.223C930.746 153.223 935.622 151.766 938.872 148.853C942.234 145.939 944.812 142.576 946.605 138.766L960.895 146.163C959.326 149.301 957.028 152.607 954.002 156.081C951.088 159.556 947.221 162.47 942.402 164.823C937.583 167.177 931.419 168.354 923.91 168.354ZM899.702 116.071H945.596C945.148 109.794 942.907 104.919 938.872 101.445C934.837 97.8583 929.57 96.0651 923.069 96.0651C916.569 96.0651 911.245 97.8583 907.099 101.445C903.064 104.919 900.598 109.794 899.702 116.071Z" fill="currentColor"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M152.241 209.03C153.283 209.506 154.389 209.744 155.494 209.744C157.334 209.751 159.152 209.1 160.6 207.855L253.301 127.982C259.338 122.782 262.801 115.232 262.801 107.275C262.801 99.3188 259.338 91.7612 253.301 86.5688L221.256 58.9555C220.885 58.6126 220.515 58.2767 220.13 57.9478C219.955 57.8009 219.773 57.6539 219.584 57.521L160.6 6.70299C157.334 3.88288 152.402 4.25376 149.583 7.51474C146.764 10.7827 147.128 15.7092 150.394 18.5293L210.777 70.5508C214.723 74.3576 216.975 79.599 216.989 85.1133C217.003 91.0124 214.471 96.6036 210.022 100.473L150.366 152.432C148.66 153.916 147.687 156.064 147.687 158.324V201.941C147.687 204.992 149.464 207.771 152.241 209.044V209.03Z" fill="#2468FF"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M102.2 207.84C103.676 209.113 105.495 209.736 107.3 209.736H107.307C109.503 209.736 111.679 208.812 113.225 207.028C116.044 203.76 115.68 198.833 112.413 196.013L52.0374 143.999C48.0921 140.192 45.8397 134.951 45.8257 129.443C45.8117 123.544 48.344 117.953 52.7929 114.076L112.448 62.1175C114.155 60.634 115.127 58.4856 115.127 56.2254V12.6151C115.127 9.56409 113.351 6.78597 110.573 5.51237C107.789 4.23877 104.523 4.70762 102.207 6.70199L9.49951 86.5678C3.46263 91.7671 0 99.3177 0 107.274C0 115.231 3.46263 122.788 9.49951 127.981L41.5446 155.594C41.9154 155.937 42.2861 156.273 42.6708 156.602C42.8457 156.749 43.0276 156.896 43.2165 157.029L102.2 207.846V207.84Z" fill="#2468FF"/>
+<path d="M157.836 72.8599L93.4313 128.338C91.4517 130.039 90.3674 132.418 90.3674 135.014C90.3674 137.61 91.4587 139.99 93.4313 141.69C96.7681 144.559 101.609 144.559 104.945 141.69L169.364 86.2327C171.344 84.5322 172.428 82.16 172.428 79.5568C172.428 76.9536 171.344 74.5814 169.364 72.8809C166.056 70.0398 161.11 70.0398 157.822 72.8669H157.836V72.8599Z" fill="currentColor"/>
+
+</svg>
+    <a class="chip js-wa" href="#"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5l1.4-4A8 8 0 1 1 8.6 18.7z"/><path d="M9 11h.01M12.5 11h.01M16 11h.01" stroke-linecap="round" stroke-width="2.8"/></svg>Book call</a>
+  </div>
+</header>
+<div class="pdfbar"><svg class="logo" viewBox="0 0 973 215" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Wantace">
+<path d="M319.062 166L301.746 48.3211H319.902L334.024 153.728H336.713L354.87 48.3211H386.643L404.799 153.728H407.489L421.442 48.3211H439.598L422.283 166H390.509L372.017 59.0804H369.327L351.003 166H319.062ZM475.727 168.354C469.787 168.354 464.463 167.345 459.756 165.328C455.161 163.31 451.463 160.34 448.661 156.418C445.971 152.495 444.626 147.732 444.626 142.128C444.626 136.412 445.971 131.705 448.661 128.007C451.463 124.196 455.217 121.338 459.924 119.433C464.743 117.528 470.179 116.575 476.231 116.575H501.448V111.195C501.448 106.376 499.991 102.509 497.077 99.5955C494.163 96.6816 489.68 95.2246 483.628 95.2246C477.688 95.2246 473.149 96.6255 470.011 99.4274C466.873 102.229 464.799 105.872 463.791 110.355L447.652 105.143C448.997 100.66 451.126 96.6255 454.04 93.0391C457.066 89.3406 461.045 86.3706 465.976 84.1291C470.908 81.8876 476.848 80.7669 483.796 80.7669C494.555 80.7669 503.017 83.5127 509.181 89.0044C515.345 94.4961 518.427 102.285 518.427 112.372V146.499C518.427 149.861 519.996 151.542 523.135 151.542H530.195V166H517.251C513.328 166 510.134 164.991 507.668 162.974C505.203 160.957 503.97 158.211 503.97 154.736V154.232H501.448C500.551 155.913 499.207 157.875 497.413 160.116C495.62 162.358 492.986 164.319 489.512 166C486.038 167.569 481.443 168.354 475.727 168.354ZM478.248 154.064C485.197 154.064 490.801 152.103 495.06 148.18C499.319 144.145 501.448 138.654 501.448 131.705V130.024H477.24C472.645 130.024 468.946 131.033 466.144 133.05C463.342 134.955 461.942 137.813 461.942 141.624C461.942 145.434 463.399 148.46 466.312 150.702C469.226 152.943 473.205 154.064 478.248 154.064ZM540.307 166V83.1205H557.286V95.5608H559.976C561.545 92.1985 564.347 89.0604 568.382 86.1465C572.417 83.2325 578.413 81.7756 586.37 81.7756C592.646 81.7756 598.194 83.1765 603.013 85.9784C607.944 88.7803 611.811 92.7589 614.613 97.9144C617.415 102.958 618.816 109.066 618.816 116.239V166H601.5V117.584C601.5 110.411 599.707 105.143 596.12 101.781C592.534 98.3066 587.603 96.5695 581.326 96.5695C574.154 96.5695 568.382 98.9231 564.011 103.63C559.752 108.337 557.623 115.174 557.623 124.14V166H540.307ZM665.814 166C660.77 166 656.736 164.487 653.709 161.461C650.796 158.435 649.339 154.4 649.339 149.357V97.7463H626.475V83.1205H649.339V55.7181H666.654V83.1205H691.367V97.7463H666.654V146.331C666.654 149.693 668.223 151.374 671.361 151.374H688.677V166H665.814ZM730.542 168.354C724.602 168.354 719.279 167.345 714.571 165.328C709.976 163.31 706.278 160.34 703.476 156.418C700.786 152.495 699.441 147.732 699.441 142.128C699.441 136.412 700.786 131.705 703.476 128.007C706.278 124.196 710.032 121.338 714.74 119.433C719.559 117.528 724.994 116.575 731.047 116.575H756.263V111.195C756.263 106.376 754.806 102.509 751.893 99.5955C748.979 96.6816 744.496 95.2246 738.443 95.2246C732.504 95.2246 727.964 96.6255 724.826 99.4274C721.688 102.229 719.615 105.872 718.606 110.355L702.467 105.143C703.812 100.66 705.942 96.6255 708.856 93.0391C711.882 89.3406 715.86 86.3706 720.792 84.1291C725.723 81.8876 731.663 80.7669 738.612 80.7669C749.371 80.7669 757.832 83.5127 763.997 89.0044C770.161 94.4961 773.243 102.285 773.243 112.372V146.499C773.243 149.861 774.812 151.542 777.95 151.542H785.011V166H772.066C768.143 166 764.949 164.991 762.484 162.974C760.018 160.957 758.785 158.211 758.785 154.736V154.232H756.263C755.367 155.913 754.022 157.875 752.229 160.116C750.436 162.358 747.802 164.319 744.327 166C740.853 167.569 736.258 168.354 730.542 168.354ZM733.064 154.064C740.013 154.064 745.616 152.103 749.875 148.18C754.134 144.145 756.263 138.654 756.263 131.705V130.024H732.055C727.46 130.024 723.762 131.033 720.96 133.05C718.158 134.955 716.757 137.813 716.757 141.624C716.757 145.434 718.214 148.46 721.128 150.702C724.042 152.943 728.021 154.064 733.064 154.064ZM831.65 168.354C823.693 168.354 816.464 166.672 809.964 163.31C803.575 159.948 798.476 155.073 794.665 148.684C790.967 142.296 789.118 134.619 789.118 125.653V123.467C789.118 114.501 790.967 106.88 794.665 100.604C798.476 94.2159 803.575 89.3406 809.964 85.9784C816.464 82.5041 823.693 80.7669 831.65 80.7669C839.607 80.7669 846.388 82.2239 851.992 85.1378C857.596 88.0518 862.079 91.9184 865.441 96.7376C868.915 101.557 871.157 106.88 872.165 112.708L855.354 116.239C854.794 112.54 853.617 109.178 851.824 106.152C850.03 103.126 847.509 100.716 844.259 98.9231C841.008 97.1299 836.918 96.2333 831.986 96.2333C827.167 96.2333 822.796 97.354 818.874 99.5955C815.063 101.725 812.037 104.863 809.796 109.01C807.554 113.045 806.433 117.976 806.433 123.804V125.317C806.433 131.145 807.554 136.132 809.796 140.279C812.037 144.426 815.063 147.564 818.874 149.693C822.796 151.823 827.167 152.887 831.986 152.887C839.271 152.887 844.819 151.038 848.63 147.339C852.44 143.529 854.85 138.71 855.858 132.882L872.67 136.748C871.325 142.464 868.915 147.732 865.441 152.551C862.079 157.37 857.596 161.237 851.992 164.151C846.388 166.953 839.607 168.354 831.65 168.354ZM923.91 168.354C915.504 168.354 908.163 166.616 901.887 163.142C895.611 159.556 890.68 154.568 887.093 148.18C883.619 141.68 881.882 134.171 881.882 125.653V123.636C881.882 115.006 883.619 107.497 887.093 101.109C890.568 94.6082 895.387 89.6208 901.551 86.1465C907.827 82.5601 915.056 80.7669 923.237 80.7669C931.195 80.7669 938.143 82.5601 944.083 86.1465C950.135 89.6208 954.843 94.4961 958.205 100.772C961.567 107.048 963.248 114.389 963.248 122.795V129.351H899.534C899.758 136.636 902.167 142.464 906.762 146.835C911.47 151.094 917.297 153.223 924.246 153.223C930.746 153.223 935.622 151.766 938.872 148.853C942.234 145.939 944.812 142.576 946.605 138.766L960.895 146.163C959.326 149.301 957.028 152.607 954.002 156.081C951.088 159.556 947.221 162.47 942.402 164.823C937.583 167.177 931.419 168.354 923.91 168.354ZM899.702 116.071H945.596C945.148 109.794 942.907 104.919 938.872 101.445C934.837 97.8583 929.57 96.0651 923.069 96.0651C916.569 96.0651 911.245 97.8583 907.099 101.445C903.064 104.919 900.598 109.794 899.702 116.071Z" fill="currentColor"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M152.241 209.03C153.283 209.506 154.389 209.744 155.494 209.744C157.334 209.751 159.152 209.1 160.6 207.855L253.301 127.982C259.338 122.782 262.801 115.232 262.801 107.275C262.801 99.3188 259.338 91.7612 253.301 86.5688L221.256 58.9555C220.885 58.6126 220.515 58.2767 220.13 57.9478C219.955 57.8009 219.773 57.6539 219.584 57.521L160.6 6.70299C157.334 3.88288 152.402 4.25376 149.583 7.51474C146.764 10.7827 147.128 15.7092 150.394 18.5293L210.777 70.5508C214.723 74.3576 216.975 79.599 216.989 85.1133C217.003 91.0124 214.471 96.6036 210.022 100.473L150.366 152.432C148.66 153.916 147.687 156.064 147.687 158.324V201.941C147.687 204.992 149.464 207.771 152.241 209.044V209.03Z" fill="#2468FF"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M102.2 207.84C103.676 209.113 105.495 209.736 107.3 209.736H107.307C109.503 209.736 111.679 208.812 113.225 207.028C116.044 203.76 115.68 198.833 112.413 196.013L52.0374 143.999C48.0921 140.192 45.8397 134.951 45.8257 129.443C45.8117 123.544 48.344 117.953 52.7929 114.076L112.448 62.1175C114.155 60.634 115.127 58.4856 115.127 56.2254V12.6151C115.127 9.56409 113.351 6.78597 110.573 5.51237C107.789 4.23877 104.523 4.70762 102.207 6.70199L9.49951 86.5678C3.46263 91.7671 0 99.3177 0 107.274C0 115.231 3.46263 122.788 9.49951 127.981L41.5446 155.594C41.9154 155.937 42.2861 156.273 42.6708 156.602C42.8457 156.749 43.0276 156.896 43.2165 157.029L102.2 207.846V207.84Z" fill="#2468FF"/>
+<path d="M157.836 72.8599L93.4313 128.338C91.4517 130.039 90.3674 132.418 90.3674 135.014C90.3674 137.61 91.4587 139.99 93.4313 141.69C96.7681 144.559 101.609 144.559 104.945 141.69L169.364 86.2327C171.344 84.5322 172.428 82.16 172.428 79.5568C172.428 76.9536 171.344 74.5814 169.364 72.8809C166.056 70.0398 161.11 70.0398 157.822 72.8669H157.836V72.8599Z" fill="currentColor"/>
+
+</svg><a class="js-wa" href="#">WhatsApp: +91 93108 80348</a></div>
+
+<!-- ================= HERO ================= -->
+<div class="hero">
+  <div class="wrap">
+    <div class="hero-img"><img src="img/hero_ba.jpg" alt="Before: cluttered chat groups and spreadsheets. After: one organised factory dashboard on desktop and mobile" width="1520" height="2000"></div>
+
+    <span class="kicker">Custom ERP for manufacturers</span>
+    <h1>Poori factory, <span class="hi">ek screen pe.</span> Bina 10 phone calls ke.</h1>
+    <p class="sub">We replace WhatsApp groups, Excel sheets and old software with <b>one ERP built for your factory</b>. Your process, your product names, your language. And you pay only as you see it working.</p>
+
+    <div class="trust">
+      <div><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"/></svg>Your own server &amp; data</div>
+      <div><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"/></svg>Unlimited users, no per-user fee</div>
+      <div><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"/></svg>Pay after you see it work</div>
+      <div><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"/></svg>Live in about 3 months</div>
+    </div>
+
+    <div class="cta-block">
+      <a class="wa js-wa" href="#"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5l1.4-4A8 8 0 1 1 8.6 18.7z"/><path d="M9 11h.01M12.5 11h.01M16 11h.01" stroke-linecap="round" stroke-width="2.8"/></svg>Book free 15-min call on WhatsApp</a>
+      <p class="wa-note">No sales pitch. Agar fit nahi hai, hum seedha bata denge.</p>
+    </div>
+  </div>
+</div>
+
+<main>
+<!-- ================= PAIN MIRROR ================= -->
+<section class="soft">
+  <div class="wrap">
+    <span class="eyebrow">Sound familiar?</span>
+    <h2 class="h2">Kya aapki factory mein bhi yeh hota hai?</h2>
+    <div class="pains-grid">
+      <div class="pain"><span class="x">✕</span><p>“Order kahan hai?” poochne ke liye 3 logon ko call karna padta hai<small>And the customer is waiting on the line.</small></p></div>
+      <div class="pain"><span class="x">✕</span><p>Orders, production and dispatch are spread across WhatsApp groups<small>Important updates get lost in hundreds of messages.</small></p></div>
+      <div class="pain"><span class="x">✕</span><p>Excel says one stock, the godown has another<small>Nobody knows the real number until someone counts.</small></p></div>
+      <div class="pain"><span class="x">✕</span><p>1,000 made, 900 dispatched, and no one can tell you where 100 went<small>Wastage is invisible, so real costing is a guess.</small></p></div>
+      <div class="pain"><span class="x">✕</span><p>One person is absent, and their information is absent too<small>Everything lives in people's heads and personal sheets.</small></p></div>
+      <div class="pain"><span class="x">✕</span><p>You bought software before, and the team stopped using it<small>Too complicated, too generic, or it never fit your process.</small></p></div>
+    </div>
+    <p class="verdict"><b>Agar 2 ya zyada sahi hain,</b> your business has outgrown its current system. That is exactly the problem we fix.</p>
+  </div>
+</section>
+
+<!-- ================= WHAT WE DO ================= -->
+<section>
+  <div class="wrap">
+    <span class="eyebrow">What we do</span>
+    <h2 class="h2">We build one system that runs your whole factory.</h2>
+    <p class="lede">Wantace builds custom ERP and CRM software for manufacturers. Not a ready-made app with 100 menus you will never use. We first understand how orders, production, stock and dispatch actually move in your plant, then build exactly that.</p>
+
+    <div class="hub" aria-label="Diagram: scattered tools go into one Wantace ERP, which gives owner dashboard, floor app and accounts">
+      <div class="hub-lbl">Today</div>
+      <div class="hub-row in"><span>WhatsApp groups</span><span>Excel sheets</span><span>Old software</span><span>Paper registers</span><span>Phone calls</span></div>
+      <div class="hub-arrow"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M12 5v14M6 13l6 6 6-6"/></svg></div>
+      <div class="hub-core">
+        <b>Your Wantace ERP</b>
+        <small>Built only for your factory</small>
+        <div class="hub-mods"><span>Orders</span><span>Recipe / BOM</span><span>Production</span><span>Stock</span><span>Purchase</span><span>Wastage</span><span>QR tracking</span><span>Dispatch</span></div>
+      </div>
+      <div class="hub-arrow"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M12 5v14M6 13l6 6 6-6"/></svg></div>
+      <div class="hub-row out"><span>Owner dashboard</span><span>Floor app on phone</span><span>Tally, GST, e-way bill</span><span>Stock alerts</span></div>
+      <div class="hub-lbl" style="margin:8px 0 0">After</div>
+    </div>
+
+    <details class="more pdf-hide">
+      <summary>See everything it can cover</summary>
+      <div class="more-body">
+        <ul class="list good">
+          <li><span><b>Orders &amp; CRM:</b> every lead and order in one place, with GST invoice, proforma and customer-wise pricing.</span></li>
+          <li><span><b>Production:</b> plan, run and close batches. Machine, operator, shift, planned vs actual material.</span></li>
+          <li><span><b>Recipe / BOM:</b> enter the order quantity and the system works out the material needed.</span></li>
+          <li><span><b>Stock &amp; purchase:</b> live raw material and finished goods, reorder alerts, purchase approvals, PO on WhatsApp or email.</span></li>
+          <li><span><b>Tracking:</b> QR or batch codes so any roll, carton or batch can be traced.</span></li>
+          <li><span><b>Control:</b> user-wise permissions and an activity log of who did what, and when.</span></li>
+          <li><span><b>Accounts:</b> Tally sync, GST and e-way bill.</span></li>
+        </ul>
+      </div>
+    </details>
+  </div>
+</section>
+
+<!-- ================= CASE STUDIES ================= -->
+<section class="soft" id="work">
+  <div class="wrap">
+    <span class="eyebrow">Real factories, real problems</span>
+    <h2 class="h2">Three factories. Three different problems. One system each.</h2>
+    <p class="lede">Har factory alag hoti hai. Here is where three of them started, and what changed.</p>
+
+    <div class="cases">
+
+      <!-- RAJDHANI -->
+      <article class="case">
+        <div class="case-head">
+          <figure class="case-ba"><span class="case-tag">CASE 01 · CARPETS</span><img src="img/case_raj.jpg" alt="Before: busy chat groups. After: Rajdhani app on phones" width="1520" height="2612"></figure>
+          <div class="case-body" style="padding-bottom:0">
+            <h3>Rajdhani Carpets</h3>
+            <p class="ind">Carpet manufacturing · roll-based production</p>
+            <div class="shift"><div class="from"><small>Pehle</small>Multiple WhatsApp groups</div><div class="arr"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div><div class="to"><small>Ab</small>Mobile app ERP for the whole floor</div></div>
+          </div>
+        </div>
+        <div class="case-body" style="padding-top:0">
+          <div class="lbl">The big pain points</div>
+          <ul class="list bad">
+            <li>Orders, production and dispatch updates lived in separate WhatsApp groups. Ek order dhoondhna matlab sau messages scroll karna.</li>
+            <li>No record of which carpet roll was where. Rolls were found by asking people.</li>
+            <li>Wastage never measured, so true cost per order was a guess.</li>
+          </ul>
+          <div class="lbl">What changed</div>
+          <ul class="list good">
+            <li>The whole team works on a phone app, as easy to use as WhatsApp.</li>
+            <li>Every roll has a QR. Scan it and see its order, stage and location.</li>
+            <li>Owner sees orders, stock and production live, without calling anyone.</li>
+          </ul>
+          <div class="js-testi" data-key="rajdhani"></div>
+          <details class="more">
+            <summary>Read the full case study</summary>
+            <div class="more-body">
+              <p><b>How it was before.</b> Rajdhani ran day-to-day operations on WhatsApp: one group for orders, one for production, one for dispatch. It worked when the business was small. As volume grew, finding the status of a single order meant scrolling, forwarding and calling.</p>
+              <figure class="zoom"><img src="img/z_raj_orders.jpg" alt="Rajdhani orders screen with order progress" width="746" height="1440"><img src="img/z_raj_prod.jpg" alt="Rajdhani production batches screen" width="746" height="1440"><figcaption>Real screens from Rajdhani's app. Orders with progress, production batches with status. Customer details hidden.</figcaption></figure>
+              <ul class="list bad">
+                <li>Owner could not see live status without calling someone.</li>
+                <li>When a mistake happened, there was no way to see who entered what.</li>
+              </ul>
+              <p><b>What we built.</b> A mobile-first ERP designed for the factory floor, not just the office.</p>
+              <ul class="list good">
+                <li>Orders with their full journey, from booking to dispatch.</li>
+                <li>Roll-level QR tracking across the warehouse.</li>
+                <li>Recipe and batch records with planned vs actual material, so wastage becomes a number.</li>
+                <li>Stock alerts, purchase approvals and notifications on phone.</li>
+                <li>User permissions and an activity log for every action.</li>
+              </ul>
+            </div>
+          </details>
+        </div>
+      </article>
+
+      <!-- DERMAT -->
+      <article class="case">
+        <div class="case-head">
+          <figure class="case-ba"><span class="case-tag">CASE 02 · COSMETICS</span><img src="img/case_dermat.jpg" alt="Before: stacked spreadsheets with errors. After: Dermat ERP overview and order stage panel" width="1520" height="2270"></figure>
+          <div class="case-body" style="padding-bottom:0">
+            <h3>Dermat India</h3>
+            <p class="ind">White-label cosmetics manufacturer · Gurugram</p>
+            <div class="shift"><div class="from"><small>Pehle</small>Hundreds of Excel sheets</div><div class="arr"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div><div class="to"><small>Ab</small>One custom ERP + CRM</div></div>
+          </div>
+        </div>
+        <div class="case-body" style="padding-top:0">
+          <p class="quote">“Order kahan hai?” took three people to answer.<small>What the team told us in our first meeting</small></p>
+          <div class="lbl">The big pain points</div>
+          <ul class="list bad">
+            <li>Order book, raw material, packaging and purchase in separate sheets. Artwork status only in people's heads.</li>
+            <li>Batch size calculated by hand, every time. 3,000 pcs of a 100 ml product had to be turned into 300 kg manually.</li>
+            <li>Leads in personal sheets, and they got lost.</li>
+          </ul>
+          <div class="lbl">What changed</div>
+          <ul class="list good">
+            <li>One order control screen: every order, every stage, artwork approval and who is responsible.</li>
+            <li>Enter the order, the system calculates the batch, explodes the formula and shows available raw material.</li>
+            <li>All leads in one CRM, so nothing is lost when someone leaves.</li>
+          </ul>
+          <div class="js-testi" data-key="dermat"></div>
+          <details class="more">
+            <summary>Read the full case study</summary>
+            <div class="more-body">
+              <p><b>How it was before.</b> Dermat makes finished, branded cosmetics for other brands: face washes, creams, shampoos. Every client gets a custom formulation, so there is no fixed product list. A dozen people worked off the same Excel order book every day.</p>
+              <figure class="zoom wide"><img src="img/z_dermat_overview.jpg" alt="Dermat overview: open orders, stuck steps, where orders are right now and pending by person" width="1456" height="831"><figcaption>Owner's screen: kitne orders, kahan atke, kiske paas. A step turns orange after 3 days.</figcaption></figure>
+              <figure class="zoom tall"><img src="img/z_dermat_stage.jpg" alt="Order stage panel with sub-steps and Mark done button" width="896" height="1110"><figcaption>Each order moves stage by stage. Artwork approval, packing material, then manufacturing. Brand names hidden.</figcaption></figure>
+              <ul class="list bad">
+                <li>No wastage tracking. If 1,000 were made and 900 shipped, nobody could see it.</li>
+                <li>A sales tool bought earlier was never adopted by the team.</li>
+              </ul>
+              <p><b>What we built.</b> A custom ERP + CRM designed around their order lifecycle, with a dense table view that feels like the Excel their team already knew.</p>
+              <ul class="list good">
+                <li>Automatic batch-size calculation and formula (BOM) explosion.</li>
+                <li>Product code automatically creates its carton and label items, ready for a PO.</li>
+                <li>One-click quotation request to multiple vendors.</li>
+                <li>Machine, operator and shift mapping. Purchase reports for any period.</li>
+                <li>Tally sync, GST and e-way bill. Unlimited users, on their own server.</li>
+              </ul>
+            </div>
+          </details>
+        </div>
+      </article>
+
+      
+<!-- VISHAL -->
+      <article class="case">
+        <div class="case-head">
+          <figure class="case-ba"><span class="case-tag">CASE 03 · HARDWARE</span><img src="img/case_vishal.jpg" alt="Before: old offline desktop menu. After: Vishal ERP home with one-tap actions" width="1520" height="1890"></figure>
+          <div class="case-body" style="padding-bottom:0">
+            <h3>Vishal Industries</h3>
+            <p class="ind">Door, cabinet &amp; drawer handles · Gujarat</p>
+            <div class="shift"><div class="from"><small>Pehle</small>6-year-old offline desktop software</div><div class="arr"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div><div class="to"><small>Ab</small>One online ERP, on phone and desktop</div></div>
+          </div>
+        </div>
+        <div class="case-body" style="padding-top:0">
+          <p class="quote">“This manufacturing costing, I need it live.”<small>The owner, in our first call</small></p>
+          <div class="lbl">The big pain points</div>
+          <ul class="list bad">
+            <li>100 pieces go to the job worker, 99 come back. “Ek padha hoga, dekh lenge.” Nobody kept a record of what was owed, and it added up every month.</li>
+            <li>Sending one challan took 5 steps: paper, desktop, PDF, find the file, WhatsApp.</li>
+            <li>Lost and rejected pieces never reached the cost sheet. A few pieces lost per 100 quietly made the real cost per piece about 4% higher than the cost he was quoting from.</li>
+          </ul>
+          <div class="lbl">What the new ERP does</div>
+          <ul class="list good">
+            <li>Shortage ledger for every job worker. Pieces owed are tracked across challans and months, and their value is deducted from that worker's bill automatically.</li>
+            <li>Challan in one tap, opened in WhatsApp from his own number.</li>
+            <li>Live cost per piece: standard cost and true cost side by side.</li>
+          </ul>
+          <div class="js-testi" data-key="vishal"></div>
+          <details class="more">
+            <summary>Read the full case study</summary>
+            <div class="more-body">
+              <p><b>How it was before.</b> Vishal Industries makes door handles, cabinet handles, drawer knobs and kitchen profiles. For six years the factory ran on a desktop program a local developer built. The owner knew every screen and was fast in it. But it worked only offline, on one computer, for one person.</p>
+              <figure class="zoom wide"><img src="img/z_vishal_tiles.jpg" alt="Vishal ERP: short pieces, pieces with job workers, and one-tap actions like Javak challan and Process Aavak" width="1568" height="652"><figcaption>His own words on every button: Javak, Aavak, Convert Stock. Short pieces and money held are on the top row.</figcaption></figure>
+              <p><b>His process</b>, in his words:</p>
+              <div class="vflow" aria-label="Vishal Industries production flow">
+                <span class="vn">Casting Aavak<small>Ordered in pieces, billed in kilos</small></span><i>↓</i>
+                <span class="vn loop">Job work Javak ⇄ Aavak<small>6–8 rounds: turning, buff, nickel, antique, gold…</small></span><i>↓</i>
+                <span class="vn">Convert to final<small>401 Knob = 1 Top + 1 Bottom</small></span><i>↓</i>
+                <span class="vn">Final stock<small>Inches on the floor, millimetres for sales</small></span><i>↓</i>
+                <span class="vn end">Sales + website stock</span>
+              </div>
+              <ul class="list bad">
+                <li>Website stock typed again, separately, by hand.</li>
+                <li>Packing, screws and overhead had no field, so they were added “randomly”.</li>
+                <li>No way to see in whose process a piece went, or to whom it was given.</li>
+              </ul>
+              <p><b>What the new ERP does.</b> Built around his own terms: Aavak, Javak, challan, party.</p>
+              <ul class="list good">
+                <li>Handles pieces and kilos together: stock by piece count, payment by weight.</li>
+                <li>Per-piece and per-inch job-work rates, so costing is right for every finish.</li>
+                <li>Partial receipts, multi-part assembly, and stock that can never go negative.</li>
+                <li>Final stock flows to the website automatically. Billing stays in his existing software.</li>
+                <li>Old data moved in from the desktop program. Runs online, for unlimited users.</li>
+              </ul>
+            </div>
+          </details>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROCESS ================= -->
+<section class="brk" id="process">
+  <div class="wrap">
+    <span class="eyebrow">How it works</span>
+    <h2 class="h2">15-minute call se go-live tak. Simple, step by step.</h2>
+    <p class="lede">At every step, you decide whether to go ahead. You never pay for something you have not seen.</p>
+
+    <div class="track" aria-label="Six steps from call to go-live">
+      <div class="tk free"><i>1</i><span>15-min call</span><em>Free</em></div>
+      <div class="tk free"><i>2</i><span>Factory visit</span><em>Free</em></div>
+      <div class="tk"><i>3</i><span>Proposal &amp; plan</span><em>Fixed price</em></div>
+      <div class="tk"><i>4</i><span>Build</span><em>Month 1</em></div>
+      <div class="tk"><i>5</i><span>Pilot &amp; training</span><em>Month 2</em></div>
+      <div class="tk"><i>6</i><span>Go-live</span><em>Month 3</em></div>
+    </div>
+
+    <ol class="steps">
+      <li class="step first">
+        <div class="step-h"><span class="n">1</span><h3>15-minute audit call</h3><span class="when">Free</span></div>
+        <p>A short call with the owner or decision-maker. How does an order move through your plant today? Where does it get stuck? If we are not the right fit, we tell you on the call itself.</p>
+      </li>
+      <li class="step">
+        <div class="step-h"><span class="n">2</span><h3>Factory visit</h3><span class="when">Free</span></div>
+        <p>We walk your floor with your team: stores, production, packing, dispatch. We see the real process, not the one on paper.</p>
+      </li>
+      <li class="step">
+        <div class="step-h"><span class="n">3</span><h3>Proposal + risk-free plan</h3><span class="when">Fixed price</span></div>
+        <p>A written proposal on your process, in your words and product names. Every pain point mapped to the screen that fixes it. Fixed scope, timeline and price.</p>
+      </li>
+      <li class="step">
+        <div class="step-h"><span class="n">4</span><h3>Build</h3><span class="when">Month 1</span></div>
+        <p>We build it. You review working screens, not slides. Your existing Excel becomes the import template, so your data is in on day one.</p>
+      </li>
+      <li class="step">
+        <div class="step-h"><span class="n">5</span><h3>Pilot + training</h3><span class="when">Month 2</span></div>
+        <p>Your team uses it on real orders. We train every role on-site, in Hindi or English.</p>
+      </li>
+      <li class="step">
+        <div class="step-h"><span class="n">6</span><h3>Go-live + handover</h3><span class="when">Month 3</span></div>
+        <p>The whole plant runs on it. Code, database and server access handed over to you. 60 days of support included.</p>
+      </li>
+    </ol>
+
+    <details class="more">
+      <summary>What happens at the factory visit and training</summary>
+      <div class="more-body">
+        <figure class="photo" style="margin:0"><img src="img/visit.jpg" alt="Wantace team walking a factory floor with the owner" width="1200" height="797"><figcaption>Factory visit: we walk every stage with you and your team.</figcaption></figure>
+        <ul class="list good">
+          <li>We note every stage in your own words, who owns it, and where it gets stuck.</li>
+          <li>If you want, we build a working demo on one of your real orders before you sign anything.</li>
+        </ul>
+        <figure class="photo" style="margin:0"><img src="img/training.jpg" alt="Trainer showing a simple phone app to factory workers" width="1200" height="797"><figcaption>On-site training: each person learns only the screens they need.</figcaption></figure>
+        <ul class="list good">
+          <li>Floor staff get big, simple phone screens. Office staff get the detailed view.</li>
+          <li>If a screen feels slow to your team, we change the screen, not your team.</li>
+        </ul>
+      </div>
+    </details>
+
+    <div class="cta-block">
+      <a class="wa js-wa" href="#"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5l1.4-4A8 8 0 1 1 8.6 18.7z"/><path d="M9 11h.01M12.5 11h.01M16 11h.01" stroke-linecap="round" stroke-width="2.8"/></svg>Start with the free 15-min call</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PAYMENT ================= -->
+<section class="soft brk" id="payment">
+  <div class="wrap">
+    <span class="eyebrow">Risk-free payment plan</span>
+    <h2 class="h2">Pehle dekho, phir pay karo.</h2>
+    <p class="lede">With most software you pay upfront and carry all the risk. We flip that. Every payment is tied to something you can see and use.</p>
+
+    <div class="pay">
+      <div class="paybar" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+      <div class="paylbl" aria-hidden="true"><span>Scope agreed</span><span>Working software</span><span>Go-live</span><span>60 days of use</span></div>
+      <div class="ms">
+        <div class="ms-row"><span class="k">1</span><div><b>To start the build</b><span>Only after scope is agreed in writing.</span></div></div>
+        <div class="ms-row"><span class="k">2</span><div><b>After you see working software</b><span>Your staff are already entering real data.</span></div></div>
+        <div class="ms-row"><span class="k">3</span><div><b>At go-live</b><span>When the full system is running across your plant.</span></div></div>
+        <div class="ms-row last"><span class="k">4</span><div><b>After 60 days of daily use</b><span>Final payment only once your team is actually using it every day. Agar team use nahi kar rahi, toh humara kaam poora nahi hua.</span></div></div>
+      </div>
+    </div>
+
+    <div class="own">
+      <div><b>Your server</b><small>Runs on your machine or your cloud. Not ours.</small></div>
+      <div><b>Your code</b><small>Source code, database, passwords: all handed over.</small></div>
+      <div><b>Unlimited users</b><small>Add your whole team. No per-user fee, ever.</small></div>
+      <div><b>No yearly licence</b><small>One build cost. No renewal holding you hostage.</small></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section class="brk" id="faq">
+  <div class="wrap">
+    <span class="eyebrow">Your doubts, answered</span>
+    <h2 class="h2">Owners usually ask us this.</h2>
+    <div class="faq">
+      <details>
+        <summary>Pehle bhi software liya tha, team ne use nahi kiya. Ab kya alag hai?</summary>
+        <div class="ans"><p>This is the most common thing we hear, and it is the first thing we design around. Software fails when the team has to change how they work to fit it. We do the opposite: screens follow your process, your Excel becomes the template, and we remove data entry instead of adding it.</p><p>Plus, our final payment comes only after 60 days of your team using it daily. If they don't use it, we don't get paid in full.</p></div>
+      </details>
+      <details>
+        <summary>What if you can't deliver what we need?</summary>
+        <div class="ans"><p>You don't carry that risk. Each payment is released only after you accept that stage. Before signing, we can also build a working demo on one of your real orders, so you see it work on your own products first.</p></div>
+      </details>
+      <details>
+        <summary>Have you worked in my industry?</summary>
+        <div class="ans"><p>We work with carpet, cosmetics and hardware manufacturers. Most factories share the same backbone: orders, recipe or BOM, raw material, production, wastage, packing and dispatch. What changes is your units, stages and approvals, and that is exactly what we customise.</p></div>
+      </details>
+      <details>
+        <summary>Ready-made software is cheaper. Why custom?</summary>
+        <div class="ans"><p>Ready-made looks cheaper in year one. Then you pay per user, every year, and the bill grows with your team. And you still keep Excel on the side for whatever it doesn't handle.</p><p>With us, you pay once, own it fully, add unlimited users, and get a system that matches your process.</p></div>
+      </details>
+      <details>
+        <summary>We already use Tally, Vyapar or other software. Do we throw it away?</summary>
+        <div class="ans"><p>No. Your billing and accounts software stays. We sync with Tally, and where you bill in Vyapar or another tool, it keeps doing that job. If another tool does one job well, we connect to it and build what sits between your systems.</p></div>
+      </details>
+      <details>
+        <summary>3 months sounds long.</summary>
+        <div class="ans"><p>It is not 3 months of waiting. You see working screens in month 1. Your team uses it on real orders in month 2. Month 3 is full go-live.</p></div>
+      </details>
+      <details>
+        <summary>Hamara data safe rahega? Who owns it?</summary>
+        <div class="ans"><p>You own it, fully. It runs on your server or your own cloud account. At handover we transfer source code, database and all passwords, and keep no access. Your customer list, formulas and costings never sit on someone else's platform.</p></div>
+      </details>
+      <details>
+        <summary>Our floor staff aren't comfortable with computers.</summary>
+        <div class="ans"><p>They don't need to be. Floor screens are made for phones, as simple as WhatsApp, with big buttons and only what that person needs. We train them in person, in their language.</p></div>
+      </details>
+      <details>
+        <summary>Kitna kharcha aayega?</summary>
+        <div class="ans"><p>It depends on your scope, so we don't guess on a page. After the call and factory visit, you get a fixed price in writing, split into the milestone plan above. No per-user fees and no yearly licence on top. This is a serious investment for a serious problem, and the proposal shows you exactly what it pays back.</p></div>
+      </details>
+      <details>
+        <summary>What happens after go-live?</summary>
+        <div class="ans"><p>60 days of support after the final payment, then optional yearly maintenance. Since you own the code, you are free to use any developer you like.</p></div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FIT ================= -->
+<section class="soft">
+  <div class="wrap">
+    <span class="eyebrow">Is this right for you?</span>
+    <h2 class="h2">We only take on factories we can genuinely help.</h2>
+    <div class="fit">
+      <div class="fit-box yes">
+        <h3>A good fit if</h3>
+        <ul class="list good">
+          <li>You manufacture, with your own production unit</li>
+          <li>Your team runs on Excel, WhatsApp, registers or old software</li>
+          <li>You, the owner or director, will join the 15-min call</li>
+          <li>You can give us a few hours for a factory visit</li>
+          <li>You see this as an investment, not a quick cheap fix</li>
+        </ul>
+      </div>
+      <div class="fit-box no">
+        <h3>Probably not a fit yet if</h3>
+        <ul class="list no">
+          <li>You only trade or distribute, with no production of your own</li>
+          <li>You want a ready-made app for a few thousand rupees</li>
+          <li>You already run SAP or have your own in-house developers</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FINAL CTA ================= -->
+<section>
+  <div class="wrap">
+    <div class="final">
+      <span class="eyebrow" style="color:#8fb0ff">Next step</span>
+      <h2>Book your free 15-minute call.</h2>
+      <p>Bas 15 minute. We understand your process and tell you honestly if we can help.</p>
+      <ol>
+        <li><b>Tap the button</b> and send us the message on WhatsApp</li>
+        <li><b>Pick a time</b> that suits you, same week</li>
+        <li><b>Keep one question ready:</b> customer pooche “order kahan hai?”, toh jawab mein kitna time lagta hai?</li>
+      </ol>
+      <a class="wa js-wa" href="#"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5l1.4-4A8 8 0 1 1 8.6 18.7z"/><path d="M9 11h.01M12.5 11h.01M16 11h.01" stroke-linecap="round" stroke-width="2.8"/></svg>Book my call on WhatsApp</a>
+      <p class="num-line">Or save our number: <span>+91 93108 80348</span></p>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <svg class="logo" viewBox="0 0 973 215" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Wantace">
+<path d="M319.062 166L301.746 48.3211H319.902L334.024 153.728H336.713L354.87 48.3211H386.643L404.799 153.728H407.489L421.442 48.3211H439.598L422.283 166H390.509L372.017 59.0804H369.327L351.003 166H319.062ZM475.727 168.354C469.787 168.354 464.463 167.345 459.756 165.328C455.161 163.31 451.463 160.34 448.661 156.418C445.971 152.495 444.626 147.732 444.626 142.128C444.626 136.412 445.971 131.705 448.661 128.007C451.463 124.196 455.217 121.338 459.924 119.433C464.743 117.528 470.179 116.575 476.231 116.575H501.448V111.195C501.448 106.376 499.991 102.509 497.077 99.5955C494.163 96.6816 489.68 95.2246 483.628 95.2246C477.688 95.2246 473.149 96.6255 470.011 99.4274C466.873 102.229 464.799 105.872 463.791 110.355L447.652 105.143C448.997 100.66 451.126 96.6255 454.04 93.0391C457.066 89.3406 461.045 86.3706 465.976 84.1291C470.908 81.8876 476.848 80.7669 483.796 80.7669C494.555 80.7669 503.017 83.5127 509.181 89.0044C515.345 94.4961 518.427 102.285 518.427 112.372V146.499C518.427 149.861 519.996 151.542 523.135 151.542H530.195V166H517.251C513.328 166 510.134 164.991 507.668 162.974C505.203 160.957 503.97 158.211 503.97 154.736V154.232H501.448C500.551 155.913 499.207 157.875 497.413 160.116C495.62 162.358 492.986 164.319 489.512 166C486.038 167.569 481.443 168.354 475.727 168.354ZM478.248 154.064C485.197 154.064 490.801 152.103 495.06 148.18C499.319 144.145 501.448 138.654 501.448 131.705V130.024H477.24C472.645 130.024 468.946 131.033 466.144 133.05C463.342 134.955 461.942 137.813 461.942 141.624C461.942 145.434 463.399 148.46 466.312 150.702C469.226 152.943 473.205 154.064 478.248 154.064ZM540.307 166V83.1205H557.286V95.5608H559.976C561.545 92.1985 564.347 89.0604 568.382 86.1465C572.417 83.2325 578.413 81.7756 586.37 81.7756C592.646 81.7756 598.194 83.1765 603.013 85.9784C607.944 88.7803 611.811 92.7589 614.613 97.9144C617.415 102.958 618.816 109.066 618.816 116.239V166H601.5V117.584C601.5 110.411 599.707 105.143 596.12 101.781C592.534 98.3066 587.603 96.5695 581.326 96.5695C574.154 96.5695 568.382 98.9231 564.011 103.63C559.752 108.337 557.623 115.174 557.623 124.14V166H540.307ZM665.814 166C660.77 166 656.736 164.487 653.709 161.461C650.796 158.435 649.339 154.4 649.339 149.357V97.7463H626.475V83.1205H649.339V55.7181H666.654V83.1205H691.367V97.7463H666.654V146.331C666.654 149.693 668.223 151.374 671.361 151.374H688.677V166H665.814ZM730.542 168.354C724.602 168.354 719.279 167.345 714.571 165.328C709.976 163.31 706.278 160.34 703.476 156.418C700.786 152.495 699.441 147.732 699.441 142.128C699.441 136.412 700.786 131.705 703.476 128.007C706.278 124.196 710.032 121.338 714.74 119.433C719.559 117.528 724.994 116.575 731.047 116.575H756.263V111.195C756.263 106.376 754.806 102.509 751.893 99.5955C748.979 96.6816 744.496 95.2246 738.443 95.2246C732.504 95.2246 727.964 96.6255 724.826 99.4274C721.688 102.229 719.615 105.872 718.606 110.355L702.467 105.143C703.812 100.66 705.942 96.6255 708.856 93.0391C711.882 89.3406 715.86 86.3706 720.792 84.1291C725.723 81.8876 731.663 80.7669 738.612 80.7669C749.371 80.7669 757.832 83.5127 763.997 89.0044C770.161 94.4961 773.243 102.285 773.243 112.372V146.499C773.243 149.861 774.812 151.542 777.95 151.542H785.011V166H772.066C768.143 166 764.949 164.991 762.484 162.974C760.018 160.957 758.785 158.211 758.785 154.736V154.232H756.263C755.367 155.913 754.022 157.875 752.229 160.116C750.436 162.358 747.802 164.319 744.327 166C740.853 167.569 736.258 168.354 730.542 168.354ZM733.064 154.064C740.013 154.064 745.616 152.103 749.875 148.18C754.134 144.145 756.263 138.654 756.263 131.705V130.024H732.055C727.46 130.024 723.762 131.033 720.96 133.05C718.158 134.955 716.757 137.813 716.757 141.624C716.757 145.434 718.214 148.46 721.128 150.702C724.042 152.943 728.021 154.064 733.064 154.064ZM831.65 168.354C823.693 168.354 816.464 166.672 809.964 163.31C803.575 159.948 798.476 155.073 794.665 148.684C790.967 142.296 789.118 134.619 789.118 125.653V123.467C789.118 114.501 790.967 106.88 794.665 100.604C798.476 94.2159 803.575 89.3406 809.964 85.9784C816.464 82.5041 823.693 80.7669 831.65 80.7669C839.607 80.7669 846.388 82.2239 851.992 85.1378C857.596 88.0518 862.079 91.9184 865.441 96.7376C868.915 101.557 871.157 106.88 872.165 112.708L855.354 116.239C854.794 112.54 853.617 109.178 851.824 106.152C850.03 103.126 847.509 100.716 844.259 98.9231C841.008 97.1299 836.918 96.2333 831.986 96.2333C827.167 96.2333 822.796 97.354 818.874 99.5955C815.063 101.725 812.037 104.863 809.796 109.01C807.554 113.045 806.433 117.976 806.433 123.804V125.317C806.433 131.145 807.554 136.132 809.796 140.279C812.037 144.426 815.063 147.564 818.874 149.693C822.796 151.823 827.167 152.887 831.986 152.887C839.271 152.887 844.819 151.038 848.63 147.339C852.44 143.529 854.85 138.71 855.858 132.882L872.67 136.748C871.325 142.464 868.915 147.732 865.441 152.551C862.079 157.37 857.596 161.237 851.992 164.151C846.388 166.953 839.607 168.354 831.65 168.354ZM923.91 168.354C915.504 168.354 908.163 166.616 901.887 163.142C895.611 159.556 890.68 154.568 887.093 148.18C883.619 141.68 881.882 134.171 881.882 125.653V123.636C881.882 115.006 883.619 107.497 887.093 101.109C890.568 94.6082 895.387 89.6208 901.551 86.1465C907.827 82.5601 915.056 80.7669 923.237 80.7669C931.195 80.7669 938.143 82.5601 944.083 86.1465C950.135 89.6208 954.843 94.4961 958.205 100.772C961.567 107.048 963.248 114.389 963.248 122.795V129.351H899.534C899.758 136.636 902.167 142.464 906.762 146.835C911.47 151.094 917.297 153.223 924.246 153.223C930.746 153.223 935.622 151.766 938.872 148.853C942.234 145.939 944.812 142.576 946.605 138.766L960.895 146.163C959.326 149.301 957.028 152.607 954.002 156.081C951.088 159.556 947.221 162.47 942.402 164.823C937.583 167.177 931.419 168.354 923.91 168.354ZM899.702 116.071H945.596C945.148 109.794 942.907 104.919 938.872 101.445C934.837 97.8583 929.57 96.0651 923.069 96.0651C916.569 96.0651 911.245 97.8583 907.099 101.445C903.064 104.919 900.598 109.794 899.702 116.071Z" fill="currentColor"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M152.241 209.03C153.283 209.506 154.389 209.744 155.494 209.744C157.334 209.751 159.152 209.1 160.6 207.855L253.301 127.982C259.338 122.782 262.801 115.232 262.801 107.275C262.801 99.3188 259.338 91.7612 253.301 86.5688L221.256 58.9555C220.885 58.6126 220.515 58.2767 220.13 57.9478C219.955 57.8009 219.773 57.6539 219.584 57.521L160.6 6.70299C157.334 3.88288 152.402 4.25376 149.583 7.51474C146.764 10.7827 147.128 15.7092 150.394 18.5293L210.777 70.5508C214.723 74.3576 216.975 79.599 216.989 85.1133C217.003 91.0124 214.471 96.6036 210.022 100.473L150.366 152.432C148.66 153.916 147.687 156.064 147.687 158.324V201.941C147.687 204.992 149.464 207.771 152.241 209.044V209.03Z" fill="#2468FF"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M102.2 207.84C103.676 209.113 105.495 209.736 107.3 209.736H107.307C109.503 209.736 111.679 208.812 113.225 207.028C116.044 203.76 115.68 198.833 112.413 196.013L52.0374 143.999C48.0921 140.192 45.8397 134.951 45.8257 129.443C45.8117 123.544 48.344 117.953 52.7929 114.076L112.448 62.1175C114.155 60.634 115.127 58.4856 115.127 56.2254V12.6151C115.127 9.56409 113.351 6.78597 110.573 5.51237C107.789 4.23877 104.523 4.70762 102.207 6.70199L9.49951 86.5678C3.46263 91.7671 0 99.3177 0 107.274C0 115.231 3.46263 122.788 9.49951 127.981L41.5446 155.594C41.9154 155.937 42.2861 156.273 42.6708 156.602C42.8457 156.749 43.0276 156.896 43.2165 157.029L102.2 207.846V207.84Z" fill="#2468FF"/>
+<path d="M157.836 72.8599L93.4313 128.338C91.4517 130.039 90.3674 132.418 90.3674 135.014C90.3674 137.61 91.4587 139.99 93.4313 141.69C96.7681 144.559 101.609 144.559 104.945 141.69L169.364 86.2327C171.344 84.5322 172.428 82.16 172.428 79.5568C172.428 76.9536 171.344 74.5814 169.364 72.8809C166.056 70.0398 161.11 70.0398 157.822 72.8669H157.836V72.8599Z" fill="currentColor"/>
+
+</svg>
+    <p>Wantace, a brand of Flamecloud LLP · Sector 48, Sohna Road, Gurugram, Haryana</p>
+    <p style="margin-top:4px">Custom ERP · CRM · Automation for manufacturers</p>
+  </div>
+</footer>
+
+<div class="dock">
+  <div class="in">
+    <p><b>Free 15-min call</b>No commitment. Seedhi baat.</p>
+    <a class="wa js-wa" href="#"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5l1.4-4A8 8 0 1 1 8.6 18.7z"/><path d="M9 11h.01M12.5 11h.01M16 11h.01" stroke-linecap="round" stroke-width="2.8"/></svg>Book now</a>
+  </div>
+</div>
+
+<script>
+const WA_LINK = "https://wa.me/919310880348?text=" + encodeURIComponent("Hi Wantace, I went through your ERP page. I want to book the 15-minute call now.");
+
+/* Client-approved testimonials only. Add as: rajdhani: {q:"...", who:"Name", role:"Role, Company"} */
+const TESTIMONIALS = {};
+
+
+document.querySelectorAll('[data-ba]').forEach(box=>{
+  const tr=box.querySelector('.ba-track'),bt=box.querySelectorAll('.ba-tabs button');
+  bt.forEach(b=>b.addEventListener('click',()=>tr.scrollTo({left:tr.clientWidth*+b.dataset.go,behavior:'smooth'})));
+  tr.addEventListener('scroll',()=>{const i=Math.round(tr.scrollLeft/tr.clientWidth);bt.forEach((b,j)=>b.classList.toggle('on',i===j))},{passive:true});
+});
+document.querySelectorAll('.js-wa').forEach(a => { a.href = WA_LINK; a.target = "_blank"; a.rel = "noopener"; });
+document.querySelectorAll('.js-testi').forEach(el => {
+  const t = TESTIMONIALS[el.dataset.key];
+  if (!t) { el.remove(); return; }
+  el.className = 'testi';
+  const p = document.createElement('p'); p.textContent = t.q;
+  const s = document.createElement('small'); s.innerHTML = '<b></b> · <span></span>';
+  s.querySelector('b').textContent = t.who; s.querySelector('span').textContent = t.role;
+  el.append(p, s);
+});
+</script>
+
+</body></html>
